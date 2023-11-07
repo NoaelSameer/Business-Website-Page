@@ -1,3 +1,7 @@
+.Home{
+    background-image: url(./);
+}
+
 body{
     display: grid;
     grid-template-coloumns:repeat(10, auto);
@@ -10,6 +14,5 @@ body{
     background-color: lightblue;
     align-items: end;
     position: static;
-    justify-content: 50px;
-
+    justify-content: 50px; 
 }
