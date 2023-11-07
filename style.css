@@ -5,9 +5,11 @@ body{
     grid-gap: 5px;
 }
 .Nav {
-    grid-column: 1/end;
-    grid-row: 1/1;
+    grid-column: 1/-1;
+    grid-row: 1/2;
     background-color: lightblue;
-    text-align: center;
+    align-items: end;
+    position: static;
+    justify-content: 50px;
 
 }
