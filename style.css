@@ -5,21 +5,15 @@
     box-sizing: border-box;
     list-style: none;
 }
-body {
-    /* background-color: #ffffff; */
+/* Removes all of the decorations, and everything else combined from lists */
+ Body{
     background-image: url("./images/shutterstock_101279995.jpg");
-    imgage-brightness: 5%;
     height: 100vh;
     background-size: cover;
     background-postion: center center;
     postion: relative
 }
-.Home{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 5px;
-}
+/* Everything should have the same setup, except the articles */
 .Nav {
     grid-column: 1 / end;
     grid-row: 1 / 2;
@@ -27,12 +21,12 @@ body {
     position: static;
     justify-content: 50px;
     height: 100px;
-    background-color: lightBlue;
+    /* background-color: lightBlue; */
     
 }
 label a{
     color: white;
-    font-size: 50px;
+    font-size: 4vh;
     line-height: 80px;
     padding-left: 100px
 
@@ -49,7 +43,7 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin-left: 50px;
-    font-size:150%;
+    font-size:1.5vw;
     padding-right: 20px;
 }
 nav ul li a{
@@ -61,11 +55,53 @@ nav ul li a:hover{
     color: black;
     transition: .5s;
 }
-
-
-
-.Us{
-    grid-column: 2/9;
-    grid-row: 2/end;
-    background-color: white;
+.Info{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color:white;
+    font-size: 2vw;
+    transition: 1s;
 }
+button{
+    text-align: center;
+    padding: 1vw 2vw;
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    font-size: 1vw;
+    border-radius: 25px;
+    transition: 1s;
+
+  }
+  button:hover{
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 200%;
+    color:black;
+    transition-duration: 1.5s;
+    cursor: pointer;
+    font-size: 90%;
+  }
+button:active{
+    background: linear-gradient(to left, white 50%, lightblue 25%) right;
+    background-size: 100% 20%;
+    transition-duration: .1s;
+    cursor: pointer;
+  }
+  .Info p{ 
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 200%;
+    transition-duration: 2s;
+    font-size: 100%;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+} 
+  .Info p:hover{ 
+    background: linear-gradient(to left, lightblue 50%, white 25%) right;
+    background-size: 20% 200%;
+    transition-duration: 2s;
+    font-size: 120%;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+} 
