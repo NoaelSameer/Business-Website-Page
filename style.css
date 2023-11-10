@@ -11,7 +11,8 @@
     height: 100vh;
     background-size: cover;
     background-postion: center center;
-    postion: relative
+    postion: relative;
+
 }
 /* Everything should have the same setup, except the articles */
 .Nav {
@@ -105,3 +106,12 @@ button:active{
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
 } 
+Body{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.AboutUs {
+    grid-row: 2/4;  /* Assuming you have a 3-row grid */
+    color: white;
+}
