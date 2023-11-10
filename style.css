@@ -8,7 +8,7 @@
 /* Removes all of the decorations, and everything else combined from lists */
  Body{
     background-image: url("./images/shutterstock_101279995.jpg");
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-postion: center center;
     postion: relative;
@@ -22,7 +22,8 @@
     position: static;
     justify-content: 50px;
     height: 100px;
-    /* background-color: lightBlue; */
+    /* position:fixed; */
+    background-color: lightBlue;
     
 }
 label a{
@@ -106,12 +107,41 @@ button:active{
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;
 } 
-Body{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.Gallery{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 15vw 70vw 40vw 15vw 50vw 35vw ;
+    background-color: #044543;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23109798' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231ec2f1' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23129296' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2300caf3' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23148e93' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2300d3f3' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23178991' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2300dbf3' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%231b858e' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2300e2f1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%231e808b' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%2320eaee' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    
 }
 
 .AboutUs {
-    grid-row: 2/4;  /* Assuming you have a 3-row grid */
+    display:block;
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
     color: white;
+}
+.AboutUs h1{
+    font-size: 3vw;
+}
+.AboutUs p{
+    font-size: 1.5vw;
+}
+.Facts{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: white;
+}
+.Facts h1{
+    font-size: 3vw;
+}
+.Facts p{
+    font-size: 2vw;
+}
+.Facts ul{
+    font-size: 1.5vw;
 }
